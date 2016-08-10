@@ -1,0 +1,26 @@
+{
+    "name": "soy",
+    "displayName": "Soy",
+    "description": "Google Closure Templates language support",
+    "version": "0.0.1",
+    "publisher": "antonkovalyov",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "soy",
+            "aliases": ["Soy", "soy"],
+            "extensions": [".soy"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "soy",
+            "scopeName": "source.soy",
+            "path": "./syntaxes/soy.tmLanguage"
+        }]
+    }
+}
